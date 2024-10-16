@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece Episodes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(45deg, #001f3f, #003366);
+        background-image: url("AboutBG.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: rgb(255, 255, 255);
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .logo {
+        width: 20%;
+      }
+
+      nav {
+        position: right;
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex: 1;
+        text-align: right;
+      }
+
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+
+      .nav-links ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+      }
+
+      .nav-links ul li::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .episode-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .episode-item {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .episode-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+
+      .episode-info {
+        font-size: 0.9rem;
+        color: #ccc;
+      }
+
+      .episode-description {
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="logo.png"
+          alt="One Piece Logo"
+          style="width: 100px; height: 50px"
+      /></a>
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="characters.html">CHARACTERS</a></li>
+            <li><a href="manga.html">MANGA</a></li>
+            <li><a href="episodes.html">EPISODES</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+    </header>
+    <main>
+      <h1>One Piece Episodes</h1>
+      <ul class="episode-list">
+        <li class="episode-item">
+          <div class="episode-title">East Blue Saga</div>
+          <div class="episode-info">Episodes 1-61</div>
+          <div class="episode-description">
+            The beginning of Luffy's journey as he forms his crew and sets out
+            for the Grand Line.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Alabasta Saga</div>
+          <div class="episode-info">Episodes 62-135</div>
+          <div class="episode-description">
+            The Straw Hats help Princess Vivi save her kingdom from the
+            machinations of Crocodile and Baroque Works.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Sky Island Saga</div>
+          <div class="episode-info">Episodes 136-206</div>
+          <div class="episode-description">
+            The crew's adventures in the sky islands of Skypiea, facing the
+            "God" Enel.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Water 7 Saga</div>
+          <div class="episode-info">Episodes 207-325</div>
+          <div class="episode-description">
+            The Straw Hats face internal conflicts and powerful enemies in Water
+            7 and Enies Lobby.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Thriller Bark Saga</div>
+          <div class="episode-info">Episodes 326-384</div>
+          <div class="episode-description">
+            The crew encounters the Shichibukai Gecko Moria and his army of
+            zombies on a haunted ship.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Summit War Saga</div>
+          <div class="episode-info">Episodes 385-516</div>
+          <div class="episode-description">
+            Luffy attempts to save his brother Ace, leading to the Marineford
+            War and the end of an era.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Fishman Island Saga</div>
+          <div class="episode-info">Episodes 517-574</div>
+          <div class="episode-description">
+            The Straw Hats reunite after two years and journey to the underwater
+            Fishman Island.
+          </div>
+        </li>
+        <li class="episode-item">
+          <div class="episode-title">Dressrosa Saga</div>
+          <div class="episode-info">Episodes 575-746</div>
+          <div class="episode-description">
+            Luffy allies with Trafalgar Law to take down Donquixote Doflamingo
+            and his criminal empire.
+          </div>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

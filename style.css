@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("contactBg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    position: right;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+    /* Adjust width to desired size */
+    height: auto;
+    /* Maintains aspect ratio */
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 150px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 40px;
+    color: #fff;
+}
+
+.watch-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.watch-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 50px;
+    }
+    .text-box p {
+        font-size: 20px;
+    }
+    .watch-btn {
+        font-size: 10px;
+        padding: 8px 20px;
+    }
+    .logo {
+        width: 150px;
+        /* Adjust width to desired size */
+        height: auto;
+        /* Maintains aspect ratio */
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        display: block;
+        transition: 1s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+
+/*---- About Section ---->*/
+
+.About {
+    min-height: 50vh;
+    width: 100%;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.About p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.About-col p {
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #000000;
+}
+
+p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.About-col {
+    flex-basis: 30%;
+    background: #fff3f3;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: 1000;
+    margin: 10px 0;
+}
+
+.About-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+    .About-col {
+        max-width: 85%;
+        /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        /* Center the box */
+        padding: 20px;
+    }
+    .About-col+.About-col {
+        margin-top: 40px;
+        /* Adjust the margin value as needed */
+    }
+}
+
+
+/* ---- other-animes ---- */
+
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.campus h1 {
+    color: #ffffff;
+}
+
+.campus p {
+    color: #ffffff;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    display: flex;
+    width: 80%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(245, 52, 52, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3 {
+    bottom: 50%;
+    opacity: 1;
+}
+
+@media(max-width:700px) {
+    .campus-col {
+        flex-basis: 100%;
+    }
+    .campus-col img {
+        width: 100%;
+    }
+}
+
+
+/* ---- Contact ---- */
+
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contact h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 17%;
+}
+
+.contact p {
+    margin: 10px 0 40px;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact a {
+    display: block;
+    margin: 100px auto;
+    /* Centers the button horizontally */
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    width: fit-content;
+    /* Adjusts the button width based on content */
+}

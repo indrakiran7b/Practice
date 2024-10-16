@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - One-Piece Theme</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-image: url("Aboutbg1.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      .logo {
+        width: 20%;
+      }
+
+      nav {
+        position: right;
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex: 1;
+        text-align: right;
+      }
+
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+
+      .nav-links ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+      }
+
+      .nav-links ul li::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+
+      .header h1 {
+        font-size: 3em;
+        margin: 0;
+      }
+
+      .header p {
+        font-size: 1.2em;
+        margin: 10px 0 0;
+      }
+
+      .form-container {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 20px;
+        border-radius: 10px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .form-group textarea {
+        height: 100px;
+      }
+
+      .form-group button {
+        background: #ff7e5f;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .contact-info {
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      .contact-info p {
+        margin: 5px 0;
+      }
+
+      .social-icons {
+        margin-top: 20px;
+      }
+
+      .social-icons a {
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <<a href="index.html"><img src="logo.png" class="logo" alt="Logo" /> </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="characters.html">CHARACTERS</a></li>
+          <li><a href="manga.html">MANGA</a></li>
+          <li><a href="episodes.html">EPISODES</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    <div class="container">
+      <div class="header">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+      </div>
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+      <div class="contact-info">
+        <p>Address: 123 Pirate Lane, Grand Line</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: contact@onepiece.com</p>
+        <div class="social-icons">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

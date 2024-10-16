@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <<a href="index.html"><img src="logo.png" class="logo" alt="Logo" /> </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="characters.html">CHARACTERS</a></li>
+                        <li><a href="manga.html">MANGA</a></li>
+                        <li><a href="episodes.html">EPISODES</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>One-Piece</h1>
+            <p>A Legendary High-Seas Quest Unlike Any Other</p>
+            <a href="https://yugenanime.tv/anime/798/one-piece/watch/" class="watch-btn">WATCH NOW</a>
+    </section>
+
+    <!--  about  -->
+
+    <section class="About">
+        <h1>The Boundless Spirit of Luffy</h1>
+        <p>A Captain Driven by Dreams, Friendship, and Adventure</p>
+
+        <div class="row">
+            <div class="About-col">
+                <h3>1. The Dream of Freedom and Adventure</h3>
+                <p>Monkey D. Luffy, the irrepressible protagonist of One Piece, is defined by his unyielding determination and infectious optimism. His dream of becoming the Pirate King is not motivated by greed or power but by a deep sense of freedom and
+                    exploration.Luffy possesses the mysterious Gum-Gum Fruit powers, allowing him to stretch his body like rubber, which reflects his adaptable and resilient nature. No matter the odds, Luffy refuses to back down, showcasing a courage
+                    that inspires his crew and the many others he encounters along his journey.
+                </p>
+            </div>
+            <div class="About-col">
+                <h3>2. Loyalty and the Power of Friendship</h3>
+                <p>At the core of Luffy's personality is his unwavering loyalty to his friends. As the captain of the Straw Hat Pirates, he places immense value on the bonds he forms with his crew, treating them like family. His willingness to risk everything
+                    to protect those he loves makes him a formidable ally and a dangerous opponent. Luffy's ability to forge powerful friendships with even the most unlikely of characters plays a key role in his many victories, turning enemies into comrades
+                    and allies through sheer trust and mutual respect.
+                </p>
+            </div>
+            <div class="About-col">
+                <h3>A Relentless Pursuit of Justice</h3>
+                <p>Luffy's adventures are marked by his love for the unknown and his innate sense of justice. He doesn't seek conflict but refuses to let injustice go unanswered, often finding himself in the middle of grand conflicts because of his refusal
+                    to compromise on his values. With each island he visits, Luffy leaves a lasting impact, often toppling corrupt regimes or liberating oppressed people. His journey is as much about discovering the world and its wonders as it is about
+                    gathering a crew that shares his ideals of freedom, adventure, and loyalty.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--  other animes  -->
+    <section class="campus">
+        <h1>Checkout The other Top Animes</h1>
+        <p>These Are The G.O.A.T Animes</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img href="https://yugenanime.tv/anime/434/naruto/" src="minato.jpg">
+                <div class="layer">
+                    <h3>Naruto Uzumaki</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="MHA.jpg">
+                <div class="layer">
+                    <h3>My Hero Acadamia</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="levi.jpg">
+                <div class="layer">
+                    <h3>Attack On Titans</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ---------Contact------------ -->
+
+    <section class="contact">
+        <h1>Contact Us</h1>
+        <p>For Any Queries, Reach Out To Us</p>
+        <a href="contact.html" class="watch-btn">CONTACT US</a>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showmenu() {
+                navLinks.style.right = "0";
+            }
+
+            function hidemenu() {
+                navLinks.style.right = "-200px";
+            }
+        </script>
+</body>
+
+</html>

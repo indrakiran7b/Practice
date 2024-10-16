@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One Piece Characters</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(45deg, #001f3f, #000000);
+        color: white;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .logo {
+        width: 20%;
+      }
+
+      nav {
+        position: right;
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-links {
+        flex: 1;
+        text-align: right;
+      }
+
+      .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+      }
+
+      .nav-links ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 17px;
+      }
+
+      .nav-links ul li::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background: #f44336;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+      }
+
+      .nav-links ul li:hover::after {
+        width: 100%;
+      }
+
+      main {
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .character-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .character-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .character-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"
+        ><img src="logo.png" alt="One Piece Logo" class="logo"
+      /></a>
+      <nav>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="characters.html">CHARACTERS</a></li>
+            <li><a href="manga.html">MANGA</a></li>
+            <li><a href="episodes.html">EPISODES</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+    </header>
+    <main>
+      <h1>One Piece Characters</h1>
+      <div class="character-grid">
+        <div class="character-card">
+          <img
+            src="luffyDp.jpg"
+            alt="Monkey D. Luffy"
+            class="character-image"
+          />
+          <h2>Monkey D. Luffy</h2>
+          <p>
+            The captain of the Straw Hat Pirates, Luffy is a cheerful and
+            determined young man with the power of the Gum-Gum Fruit, allowing
+            him to stretch his body like rubber.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="Zoro.jpg" alt="Roronoa Zoro" class="character-image" />
+          <h2>Roronoa Zoro</h2>
+          <p>
+            The first mate of the Straw Hat Pirates, Zoro is a skilled swordsman
+            who aims to become the world's greatest swordsman. He fights using
+            the Three Sword Style.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="Nami.jpg" alt="Nami" class="character-image" />
+          <h2>Nami</h2>
+          <p>
+            The navigator of the Straw Hat Pirates, Nami is a skilled
+            cartographer and thief with a dream to draw a map of the entire
+            world.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="ussop.jpg" alt="Usopp" class="character-image" />
+          <h2>Usopp</h2>
+          <p>
+            The sniper of the Straw Hat Pirates, Usopp is a talented marksman
+            and inventor known for his elaborate lies and stories.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="sanji.jpg" alt="Sanji" class="character-image" />
+          <h2>Sanji</h2>
+          <p>
+            The cook of the Straw Hat Pirates, Sanji is a master chef and
+            powerful fighter who uses a unique kicking-based combat style.
+          </p>
+        </div>
+        <div class="character-card">
+          <img
+            src="chopper.png"
+            alt="Tony Tony Chopper"
+            class="character-image"
+          />
+          <h2>Tony Tony Chopper</h2>
+          <p>
+            The doctor of the Straw Hat Pirates, Chopper is a reindeer who
+            gained human abilities after eating the Human-Human Fruit.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="nicorobin.jpg" alt="Nico Robin" class="character-image" />
+          <h2>Nico Robin</h2>
+          <p>
+            The archaeologist of the Straw Hat Pirates, Robin has the power to
+            sprout additional body parts and is driven by her desire to uncover
+            the world's hidden history.
+          </p>
+        </div>
+        <div class="character-card">
+          <img src="franky.jpg" alt="Franky" class="character-image" />
+          <h2>Franky</h2>
+          <p>
+            The shipwright of the Straw Hat Pirates, Franky is a cyborg with
+            superhuman strength and the ability to modify his body with various
+            weapons and tools.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
